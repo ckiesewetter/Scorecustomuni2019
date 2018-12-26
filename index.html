@@ -85,7 +85,7 @@
 
     <!-- home
     ================================================== -->
-    <section id="home" class="s-home target-section" data-parallax="scroll" data-image-src="images/hero-bg.jpg" data-natural-width=3000 data-natural-height=2000 data-position-y=top>
+    <section id="home" class="s-home target-section" data-parallax="scroll" data-image-src="images/abanda1.jpg" data-natural-width=3000 data-natural-height=2000 data-position-y=top>
 
         <div class="shadow-overlay"></div>
 
@@ -106,9 +106,9 @@
         </div> <!-- end home-content -->
 
         <ul class="home-sidelinks">
-            <li><a class="smoothscroll" href="#about">Instructions<span></span></a></li>
-            <li><a class="smoothscroll" href="#services">Build<span>your kit</span></a></li>
-            <li><a  class="smoothscroll" href="#contact">Contact<span></span></a></li>
+            <li><a class="smoothscroll" href="#about">Instructions<span>Start Here</span></a></li>
+            <li><a class="smoothscroll" href="#services">Build<span>Your Kit</span></a></li>
+            <li><a  class="smoothscroll" href="#contact">Contact<span>With Any Questions</span></a></li>
         </ul> <!-- end home-sidelinks -->
 
         <ul class="home-social">
@@ -210,6 +210,98 @@
 
     <!-- services
     ================================================== -->
+
+
+    <style>
+    .hovereffect {
+      width: 100%;
+      height: 100%;
+      float: left;
+      overflow: hidden;
+      position: relative;
+      text-align: center;
+      cursor: default;
+      background: #CCCCCC;
+    }
+
+    .hovereffect .overlay {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      overflow: hidden;
+      top: 0;
+      left: 0;
+      padding: 50px 20px;
+    }
+
+    .hovereffect img {
+      display: block;
+      position: relative;
+      max-width: none;
+      width: calc(100% + 20px);
+      -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+      transition: opacity 0.35s, transform 0.35s;
+      -webkit-transform: translate3d(-10px,0,0);
+      transform: translate3d(-10px,0,0);
+      -webkit-backface-visibility: hidden;
+      backface-visibility: hidden;
+    }
+
+    .hovereffect:hover img {
+      opacity: 0.4;
+      filter: alpha(opacity=40);
+      -webkit-transform: translate3d(0,0,0);
+      transform: translate3d(0,0,0);
+    }
+
+    .hovereffect h2 {
+      text-transform: uppercase;
+      color: #fff;
+      text-align: center;
+      position: relative;
+      font-size: 17px;
+      overflow: hidden;
+      padding: 0.5em 0;
+      background-color: transparent;
+    }
+
+    .hovereffect h2:after {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 2px;
+      background: #fff;
+      content: '';
+      -webkit-transition: -webkit-transform 0.35s;
+      transition: transform 0.35s;
+      -webkit-transform: translate3d(-100%,0,0);
+      transform: translate3d(-100%,0,0);
+    }
+
+    .hovereffect:hover h2:after {
+      -webkit-transform: translate3d(0,0,0);
+      transform: translate3d(0,0,0);
+    }
+
+    .hovereffect a, .hovereffect p {
+      color: #fff;
+      opacity: 0;
+      filter: alpha(opacity=0);
+      -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+      transition: opacity 0.35s, transform 0.35s;
+      -webkit-transform: translate3d(100%,0,0);
+      transform: translate3d(100%,0,0);
+    }
+
+    .hovereffect:hover a, .hovereffect:hover p {
+      opacity: 1;
+      filter: alpha(opacity=100);
+      -webkit-transform: translate3d(0,0,0);
+      transform: translate3d(0,0,0);
+    }
+
+    </style>
      <section id='services' class="s-services light-gray">
 
          <div class="row section-header" data-aos="fade-up">
@@ -239,7 +331,18 @@
                     Quo delectus est. Maiores voluptas ab sit natus veritatis ut. Debitis nulla cumque veritatis.
                     Sunt suscipit voluptas ipsa in tempora esse soluta sint.
                     </p> -->
-                    <a href="des1.php">  <img src="images/P1-Plain.jpg" alt="Design 2" height="250" width="250"><a/>
+                    <!-- <a href="des1.php">  <img src="images/P1-Plain.jpg" alt="Design 2" height="250" width="250"><a/> -->
+                      <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                        <div class="hovereffect">
+                            <img class="img-responsive" src="images/P1-D1-H&H.jpg" alt="">
+                                <div class="overlay">
+                                    <h2>Design 1</h2>
+                            <p>
+                              <a href="des1.php">LINK HERE</a>
+                            </p>
+                                </div>
+                        </div>
+                    </div>
                 </div>
             </div>
 
@@ -248,12 +351,23 @@
                     <!-- <i class="icon-group"></i> -->
                 </div>
                 <div class="service-text">
-                    <h3 class="h4">Design 4</h3>
+                    <h3 class="h4">Design 2</h3>
                     <!-- <p>Nemo cupiditate ab quibusdam quaerat impedit magni. Earum suscipit ipsum laudantium.
                     Quo delectus est. Maiores voluptas ab sit natus veritatis ut. Debitis nulla cumque veritatis.
                     Sunt suscipit voluptas ipsa in tempora esse soluta sint.
                     </p> -->
-                    <a href="des4.php">  <img src="images/P2-Plain.jpg" alt="Design 2" height="250" width="250"><a/>
+                    <!-- <a href="des2.php">  <img src="images/P1-D2-Plain.jpg" alt="Design 2" height="250" width="250"><a/> -->
+                      <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                        <div class="hovereffect">
+                            <img class="img-responsive" src="images/P1-D2-H&H.jpg" alt="">
+                                <div class="overlay">
+                                    <h2>Design 2</h2>
+                            <p>
+                              <a href="des2.php">LINK HERE</a>
+                            </p>
+                                </div>
+                        </div>
+                    </div>
                 </div>
             </div>
 
@@ -262,12 +376,23 @@
                     <!-- <i class="icon-earth"></i> -->
                 </div>
                 <div class="service-text">
-                    <h3 class="h4">Design 5</h3>
+                    <h3 class="h4">Design 3</h3>
                     <!-- <p>Nemo cupiditate ab quibusdam quaerat impedit magni. Earum suscipit ipsum laudantium.
                     Quo delectus est. Maiores voluptas ab sit natus veritatis ut. Debitis nulla cumque veritatis.
                     Sunt suscipit voluptas ipsa in tempora esse soluta sint.
-                    </p> -->
-                    <a href="des5.php">  <img src="images/P3-Plain.jpg" alt="Design 2" height="250" width="250"><a/>
+                  </p> -->
+  <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+    <div class="hovereffect">
+        <img class="img-responsive" src="images/P2-D1-H&H.jpg" alt="">
+            <div class="overlay">
+                <h2>Design 3</h2>
+				<p>
+					<a href="des3.php">LINK HERE</a>
+				</p>
+            </div>
+    </div>
+</div>
+                    <!-- <a href="des3.php">  <img src="images/P2-D1-Plain.jpg" alt="Design 3" height="250" width="250"><a/> -->
                 </div>
             </div>
 
@@ -276,12 +401,23 @@
                     <!-- <i class="icon-tv"></i> -->
                 </div>
                 <div class="service-text">
-                    <h3 class="h4">Design 1</h3>
+                    <h3 class="h4">Design 4</h3>
                     <!-- <p>Nemo cupiditate ab quibusdam quaerat impedit magni. Earum suscipit ipsum laudantium.
                     Quo delectus est. Maiores voluptas ab sit natus veritatis ut. Debitis nulla cumque veritatis.
                     Sunt suscipit voluptas ipsa in tempora esse soluta sint.
                     </p> -->
-                    <a href="des1.php">  <img src="images/P1-Plain.jpg" alt="Design 2" height="250" width="250"><a/>
+                    <!-- <a href="des4.php">  <img src="images/P2-D2-Plain.jpg" alt="Design 4" height="250" width="250"><a/> -->
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                      <div class="hovereffect">
+                          <img class="img-responsive" src="images/P2-D2-H&H.jpg" alt="">
+                              <div class="overlay">
+                                  <h2>Design 4</h2>
+                          <p>
+                            <a href="des4.php">LINK HERE</a>
+                          </p>
+                              </div>
+                      </div>
+                  </div>
                 </div>
             </div>
 
@@ -290,12 +426,23 @@
                     <!-- <i class="icon-group"></i> -->
                 </div>
                 <div class="service-text">
-                    <h3 class="h4">Design 4</h3>
+                    <h3 class="h4">Design 5</h3>
                     <!-- <p>Nemo cupiditate ab quibusdam quaerat impedit magni. Earum suscipit ipsum laudantium.
                     Quo delectus est. Maiores voluptas ab sit natus veritatis ut. Debitis nulla cumque veritatis.
                     Sunt suscipit voluptas ipsa in tempora esse soluta sint.
                     </p> -->
-                    <a href="des4.php">  <img src="images/P2-Plain.jpg" alt="Design 2" height="250" width="250"><a/>
+                    <!-- <a href="des5.php">  <img src="images/P3-D1-Plain.jpg" alt="Design 5" height="250" width="250"><a/> -->
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                      <div class="hovereffect">
+                          <img class="img-responsive" src="images/P3-D1-H&H.jpg" alt="">
+                              <div class="overlay">
+                                  <h2>Design 5</h2>
+                          <p>
+                            <a href="des5.php">LINK HERE</a>
+                          </p>
+                              </div>
+                      </div>
+                  </div>
                 </div>
             </div>
 
@@ -304,12 +451,23 @@
                     <!-- <i class="icon-earth"></i> -->
                 </div>
                 <div class="service-text">
-                    <h3 class="h4">Design 5</h3>
+                    <h3 class="h4">Design 6</h3>
                     <!-- <p>Nemo cupiditate ab quibusdam quaerat impedit magni. Earum suscipit ipsum laudantium.
                     Quo delectus est. Maiores voluptas ab sit natus veritatis ut. Debitis nulla cumque veritatis.
                     Sunt suscipit voluptas ipsa in tempora esse soluta sint.
                     </p> -->
-                    <a href="des5.php">  <img src="images/P3-Plain.jpg" alt="Design 2" height="250" width="250"><a/>
+                    <!-- <a href="des6.php">  <img src="images/P3-D2-Plain.jpg" alt="Design 6" height="250" width="250"><a/> -->
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                      <div class="hovereffect">
+                          <img class="img-responsive" src="images/P3-D2-H&H.jpg" alt="">
+                              <div class="overlay">
+                                  <h2>Design 6</h2>
+                          <p>
+                            <a href="des6.php">LINK HERE</a>
+                          </p>
+                              </div>
+                      </div>
+                  </div>
                 </div>
             </div>
 
@@ -325,7 +483,7 @@
         <div class="row section-header" data-aos="fade-up">
             <div class="col-full">
                 <h3 class="subhead">Portfolio</h3>
-                <h2 class="display-1">Be Inspired</h2>
+                <h2 class="display-1">Checkout Our Favorites</h2>
             </div>
         </div> <!-- end section-header -->
 
@@ -336,8 +494,8 @@
                     <div class="item-folio">
 
                         <div class="item-folio__thumb">
-                            <a href="images/portfolio/gallery/P1-Color.jpg" class="thumb-link" title="Lamp" data-size="1050x700">
-                                <img src="images/portfolio/gallery/P1-Color.jpg"
+                            <a href="images/portfolio/gallery/2100x1400-P1-D1-Color.jpg" class="thumb-link" title="Lamp" data-size="1050x700">
+                                <img src="images/portfolio/2100x1400-P1-D2-Color.jpg"
                                      srcset="images/portfolio/gallery/P1-Color.jpg 1x, images/portfolio/gallery/P1-Color.jpg 2x" alt="">
                             </a>
                         </div>
@@ -356,7 +514,6 @@
                         </a>
 
                         <div class="item-folio__caption">
-                            <p>Sublimated </p>
                         </div>
 
                     </div> <!-- end item-folio -->
@@ -366,28 +523,28 @@
                     <div class="item-folio">
 
                         <div class="item-folio__thumb">
-                            <a href="images/portfolio/gallery/g-salad.jpg" class="thumb-link" title="Salad" data-size="1050x700">
-                                <img src="images/portfolio/salad.jpg"
-                                     srcset="images/portfolio/salad.jpg 1x, images/portfolio/salad@2x.jpg 2x" alt="">
+                            <a href="images/portfolio/gallery/2100x1400-P1-D2-Color.jpg" class="thumb-link" title="Salad" data-size="1050x700">
+                                <img src="images/portfolio/500x625-P1-D2-Color.jpg"
+                                     srcset="images/portfolio/500x625-P1-D2-Color.jpg 1x, images/portfolio/salad@2x.jpg 2x" alt="">
                             </a>
                         </div>
 
                         <div class="item-folio__text">
                             <h3 class="item-folio__title">
-                                Salad
+Design 2
                             </h3>
                             <p class="item-folio__cat">
-                                Branding
+
                             </p>
                         </div>
 
                         <a href="https://www.behance.net/" class="item-folio__project-link" title="Project link">
-                            Project Link
+                            View
                         </a>
-
+<!--
                         <span class="item-folio__caption">
                             <p>Vero molestiae sed aut natus excepturi. Et tempora numquam. Temporibus iusto quo.Unde dolorem corrupti neque nisi.</p>
-                        </span>
+                        </span> -->
 
                     </div> <!-- end item-folio -->
                 </div> <!-- end masonry__brick -->
@@ -396,7 +553,7 @@
                     <div class="item-folio">
 
                         <div class="item-folio__thumb">
-                            <a href="images/portfolio/gallery/P2-Color.jpg" class="thumb-link" title="Woodcraft" data-size="1050x700">
+                            <a href="images/portfolio/gallery/2100x1400-P2-D2-Color.jpg" class="thumb-link" title="Woodcraft" data-size="1050x700">
                                 <img src="images/portfolio/gallery/P2-Color.jpg"
                                      srcset="images/portfolio/gallery/P2-Color.jpg 1x, images/portfolio/gallery/P2-Color.jpg 2x" alt="">
                             </a>
@@ -404,7 +561,7 @@
 
                         <div class="item-folio__text">
                             <h3 class="item-folio__title">
-                                Design 3
+                                Design 4
                             </h3>
                             <p class="item-folio__cat">
 
@@ -412,11 +569,11 @@
                         </div>
 
                         <a href="https://www.behance.net/" class="item-folio__project-link" title="Project link">
-                            Project Link
+                            View
                         </a>
 
                         <span class="item-folio__caption">
-                            <p>Vero molestiae sed aut natus excepturi. Et tempora numquam. Temporibus iusto quo.Unde dolorem corrupti neque nisi.</p>
+                            <!-- <p>Vero molestiae sed aut natus excepturi. Et tempora numquam. Temporibus iusto quo.Unde dolorem corrupti neque nisi.</p> -->
                         </span>
 
                     </div> <!-- end item-folio -->
@@ -426,7 +583,7 @@
                     <div class="item-folio">
 
                         <div class="item-folio__thumb">
-                            <a href="images/portfolio/gallery/P3-Color.jpg" class="thumb-link" title="Liberty" data-size="1050x700">
+                            <a href="images/portfolio/gallery/2100x1400-P3-D1-Color.jpg" class="thumb-link" title="Liberty" data-size="1050x700">
                                 <img src="images/portfolio/gallery/P3-Color.jpg"
                                      srcset="images/portfolio/gallery/P3-Color.jpg 1x, images/portfolio/gallery/P3-Color.jpg 2x" alt="">
                             </a>
@@ -442,12 +599,11 @@
                         </div>
 
                         <a href="https://www.behance.net/" class="item-folio__project-link" title="Project link">
-                            Project Link
-                        </a>
+View                        </a>
 
-                        <span class="item-folio__caption">
+                        <!-- <span class="item-folio__caption">
                             <p>Vero molestiae sed aut natus excepturi. Et tempora numquam. Temporibus iusto quo.Unde dolorem corrupti neque nisi.</p>
-                        </span>
+                        </span> -->
 
                     </div> <!-- end item-folio -->
                 </div> <!-- end masonry__brick -->
@@ -457,27 +613,26 @@
                     <div class="item-folio">
 
                         <div class="item-folio__thumb">
-                            <a href="images/portfolio/gallery/g-fuji.jpg" class="thumb-link" title="Fuji" data-size="1050x700">
-                                <img src="images/portfolio/fuji.jpg"
-                                     srcset="images/portfolio/fuji.jpg 1x, images/portfolio/fuji@2x.jpg 2x" alt="">
+                            <a href="images/portfolio/gallery/2100x1400-P3-D2-Color.jpg" class="thumb-link" title="Fuji" data-size="1050x700">
+                                <img src="images/portfolio/500x625-P3-D2-Color.jpg"
+                                     srcset="images/portfolio/500x625-P3-D2-Color.jpg 1x, images/portfolio/fuji@2x.jpg 2x" alt="">
                             </a>
                         </div>
 
                         <div class="item-folio__text">
                             <h3 class="item-folio__title">
-                                Fuji
+Design 6
                             </h3>
                             <p class="item-folio__cat">
-                                Web Design
                             </p>
                         </div>
 
                         <a href="https://www.behance.net/" class="item-folio__project-link" title="Project link">
-                            Project Link
+                            View
                         </a>
 
                         <span class="item-folio__caption">
-                            <p>Vero molestiae sed aut natus excepturi. Et tempora numquam. Temporibus iusto quo.Unde dolorem corrupti neque nisi.</p>
+                            <!-- <p>Vero molestiae sed aut natus excepturi. Et tempora numquam. Temporibus iusto quo.Unde dolorem corrupti neque nisi.</p> -->
                         </span>
 
                     </div> <!-- end item-folio -->
@@ -487,27 +642,26 @@
                     <div class="item-folio">
 
                         <div class="item-folio__thumb">
-                            <a href="images/portfolio/gallery/g-shutterbug.jpg" class="thumb-link" title="Shutterbug" data-size="1050x700">
-                                <img src="images/portfolio/shutterbug.jpg"
-                                     srcset="images/portfolio/shutterbug.jpg 1x, images/portfolio/shutterbug@2x.jpg 2x" alt="">
+                            <a href="images/portfolio/gallery/2100x1400-P2-D1-Color.jpg" class="thumb-link" title="Shutterbug" data-size="1050x700">
+                                <img src="images/portfolio/500x625-P2-D1-Color.jpg"
+                                     srcset="images/portfolio/500x625-P2-D1-Color.jpg 1x, images/portfolio/shutterbug@2x.jpg 2x" alt="">
                             </a>
                         </div>
 
                         <div class="item-folio__text">
                             <h3 class="item-folio__title">
-                                Lady Shutterbug
+Design 3
                             </h3>
                             <p class="item-folio__cat">
-                                Branding
                             </p>
                         </div>
 
                         <a href="https://www.behance.net/" class="item-folio__project-link" title="Project link">
-                            Project Link
+                            View
                         </a>
 
                         <span class="item-folio__caption">
-                            <p>Vero molestiae sed aut natus excepturi. Et tempora numquam. Temporibus iusto quo.Unde dolorem corrupti neque nisi.</p>
+                            <!-- <p>Vero molestiae sed aut natus excepturi. Et tempora numquam. Temporibus iusto quo.Unde dolorem corrupti neque nisi.</p> -->
                         </span>
 
                     </div> <!-- end item-folio -->
